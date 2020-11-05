@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/consoleWrite"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:background="@color/bgLight" />
+
+    <EditText
+        android:id="@+id/valuePrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="@string/enter_value"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:visibility="invisible">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/closeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/darkGreen"
+        android:onClick="restartUserProgram"
+        android:text="@string/restart"
+        android:visibility="visible" />
+</LinearLayout>
